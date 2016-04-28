@@ -1,0 +1,7 @@
+1) erase flash completely
+./esptool.py --port /dev/tty.usbserial-A50285BI erase_flash
+
+2) needed flash 1Mb or more
+* 1M flash 8m is 8mbit(1Mbyte)
+./esptool.py -p /dev/tty.usbserial-A50285BI --baud 115200 write_flash --flash_size=8m 0 ../micropython/firmware-combined.bin 
+
