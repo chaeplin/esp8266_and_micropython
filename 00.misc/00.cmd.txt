@@ -1,3 +1,5 @@
+//  https://github.com/themadinventor/esptool
+
 1) erase flash completely
 ./esptool.py --port /dev/tty.usbserial-A50285BI erase_flash
 
